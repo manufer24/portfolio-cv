@@ -1,0 +1,176 @@
+:root {
+  --first-color: #18191a;
+  --second-color: #242526;
+  --third-color: #b0b3b8;
+  --fourth-color: #ffffff1a;
+  --hover-color: #3a3b3c;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  user-select: none;
+}
+
+body {
+  background-color: var(--first-color);
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+body.light {
+  --first-color: #e6e6e6;
+  --second-color: #b9b8b8;
+  --fourth-color: #929191;
+  --third-color: #222;
+  --hover-color: #d2d2d3;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar {
+  position: relative;
+  margin-top: 150px;
+}
+
+.drop-btn {
+  width: 270px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--second-color);
+  color: var(--third-color);
+  border-radius: 5px;
+  padding: 0 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.drop-btn span {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.wrapper {
+  position: absolute;
+  top: 65px;
+  display: flex;
+  width: auto;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s ease, opacity 0.3s ease;
+}
+
+.wrapper.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu-bar,
+.setting-drop,
+.help-drop,
+.theme-drop,
+.language-drop {
+  width: 270px;
+  height: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  list-style: none;
+  background-color: var(--second-color);
+}
+
+.language-drop {
+  height: 250px;
+  /* display: none; */
+}
+
+.theme-drop {
+  height: 200px;
+}
+
+.setting-drop,
+.help-drop,
+.theme-drop,
+.language-drop {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s ease, opacity 0.3s ease, margin-left 0.3s ease;
+}
+
+.setting-drop.visible,
+.help-drop.visible,
+.theme-drop.visible,
+.language-drop.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu-li {
+  line-height: 55px;
+}
+
+.menu-li a {
+  position: relative;
+  text-decoration: none;
+  color: var(--third-color);
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 10px;
+  align-items: center;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.menu-li a:hover {
+  background-color: var(--hover-color);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 13px;
+  background-color: var(--fourth-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.menu-li a i {
+  position: absolute;
+  right: 10px;
+  font-size: 25px;
+  pointer-events: none;
+}
+
+.setting-drop {
+  height: auto;
+}
+
+.arrow {
+  padding-left: 10px;
+  font-size: 20px;
+  color: var(--third-color);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.arrow span {
+  margin-right: 15px;
+}

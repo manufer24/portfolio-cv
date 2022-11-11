@@ -1,0 +1,59 @@
+{
+  "metaTitle": {
+    "title": "Menu de deslizamento"
+  },
+
+  "dropBtn": {
+    "dropTitle": "Menu de deslizamento<span class='fas fa-caret-down'></span>"
+  },
+
+  "menu": {
+    "home": "<div class='icon'><span class='fas fa-home'></span></div>Inicio ",
+    "setting": "<div class='icon'><span class='fas fa-cog'></span></div>Configurações  <i class='fas fa-angle-right'></i>",
+    "help": "<div class='icon'><span class='fas fa-question-circle'></span></div> Ajuda <i class='fas fa-angle-right'></i>",
+    "about": "<div class='icon'><span class='fas fa-user'></span></div> Sobre nós ",
+    "comment": "<div class='icon'><span class='fas fa-comment-alt'></span></div>Comentários "
+  },
+
+  "settings": {
+    "setting": "<span class='fas fa-arrow-left'></span> Configurações ",
+    "info": "<div class='icon'><span class='fas fa-user'></span></div> Informação pessoal ",
+    "password": "<div class='icon'><span class='fas fa-lock'></span></div> palavra-passe ",
+    "theme": "<div class='icon'><span class='fas fa-palette'></span></div> Tema <i class='fas fa-angle-right'></i>",
+    "language": "<div class='icon'><span class='fas fa-globe-asia'></span></div> Língua <i class='fas fa-angle-right'></i>",
+    "logOut": "<div class='icon'><span class='fas fa-sign-out-alt'></span></div> Sair da sessão "
+  },
+
+  "helpDrop": {
+    "help": "<span class='fas fa-arrow-left'></span> Ajuda ",
+    "center": "<div class='icon'><span class='fas fa-question-circle'></span></div> Centro de ajuda ",
+    "support": "<div class='icon'><span class='fas fa-envelope'></span></div> caixa de entrada de suporte ",
+    "feedback": "<div class='icon'><span class='fas fa-comment-alt'></span></div> Enviar comentários ",
+    "report": "<div class='icon'><span class='fas fa-exclamation-circle'></span></div> Denunciar um problema "
+  },
+
+  "tema": {
+    "temaTitle": "<span class='fas fa-arrow-left'></span>Tema",
+    "temaOscuro": "<div class='icon'><span class='fas fa-moon'></span></div> Escuro",
+    "temaClaro": "<div class='icon'><span class='fas fa-sun'></span></div> Claro"
+  },
+
+  "idioma": {
+    "idiomaTitulo": "<span class='fas fa-arrow-left'></span>Língua",
+    "idiomaEspanol": "Espanhol",
+    "idiomaIngles": "Inglês",
+    "idiomaPortugues": "Português"
+  },
+
+  "temaDrop": {
+    "tema": "Tema",
+    "dark": "escuro",
+    "light": "Claro"
+  },
+
+  "idiomDrop": {
+    "spanish": "Espanhol",
+    "english": "Inglês",
+    "portuguesse": "Português"
+  }
+}

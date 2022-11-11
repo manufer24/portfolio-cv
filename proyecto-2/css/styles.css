@@ -1,0 +1,192 @@
+:root {
+  --Red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+  --White: hsl(0, 0%, 100%);
+  --Very-light-grayish-blue: hsl(210, 60%, 98%);
+  --Light-grayish-blue-1: hsl(211, 68%, 94%);
+  --Light-grayish-blue-2: hsl(205, 33%, 90%);
+  --Grayish-blue: hsl(219, 14%, 63%);
+  --Dark-grayish-blue: hsl(219, 12%, 42%);
+  --Very-dark-blue: hsl(224, 21%, 14%);
+  --font: "Plus Jakarta Sans", sans-serif;
+  --transition: color 0.5s ease;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: var(--font);
+  font-size: 16px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--Very-light-grayish-blue);
+}
+
+.container {
+  min-width: 375px;
+  padding: 0 1rem;
+  background-color: var(--White);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notif_box {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+#notifications {
+  background-color: var(--Blue);
+  margin-left: 0.5rem;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  color: var(--White);
+  font-weight: 800;
+  border-radius: 0.5rem;
+}
+
+p {
+  color: var(--Dark-grayish-blue);
+  font-size: 14px;
+  margin: 0;
+}
+
+#mark_all {
+  font-size: 14px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.notif_card {
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.notif_img {
+  position: relative;
+  width: 50px;
+  top: -5px;
+}
+
+.description {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+strong {
+  color: var(--Very-dark-blue);
+  cursor: pointer;
+}
+
+.time {
+  color: var(--Grayish-blue);
+}
+
+.link {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: var(--Blue);
+}
+
+.unread {
+  background-color: var(--Very-light-grayish-blue);
+}
+
+.unread p:first-of-type::after {
+  content: "";
+  background-color: var(--Red);
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50px;
+}
+
+.message_card {
+  display: flex;
+  align-items: center;
+}
+
+.message {
+  padding: 1rem;
+  border: 1px solid var(--Light-grayish-blue-2);
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin: 0 0 0 5rem;
+  transition: background-color 0.3s ease;
+}
+
+.message:hover {
+  background-color: var(--Light-grayish-blue-1);
+}
+
+.chess_img {
+  position: relative;
+  width: 50px;
+  right: -15px;
+  cursor: pointer;
+}
+
+.attribution {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--Blue);
+}
+
+.attribution a:nth-child(2) {
+  color: var(--Red);
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    margin: 2rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    max-width: 700px;
+    /* background-color: aqua; */
+  }
+
+  p,
+  .notif_box,
+  #mark_all {
+    font-size: 16px;
+  }
+
+  #notifications {
+    width: 35px;
+  }
+}

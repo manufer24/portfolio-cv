@@ -1,0 +1,32 @@
+{
+  "metaTitle": {
+    "title": "Menu de deslizamento"
+  },
+
+  "brand": {
+    "name": "Nome"
+  },
+
+  "menu": {
+    "home": "Home",
+    "products": "Produtos <i class='bx bx-chevron-down'></i>",
+    "about": "Sobre mim",
+    "contact": "Contacto",
+    "eBook": "E-books",
+    "paint": "Tintas",
+    "onlineCourse": "Cursos online",
+    "cookies": "Bolachas",
+    "books": "Livros",
+    "pencils": "Lápis",
+    "challenge": "Desafios",
+    "activities": "Actividades",
+    "medals": "Medalhas",
+    "emptySlot": "Caixa vazia"
+  },
+
+  "settings": {
+    "night": "Noite",
+    "lightNight": "Noite<br>clara",
+    "day": "Dia"
+  }
+}

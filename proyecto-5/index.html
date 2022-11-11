@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/proyecto-5/css/styles.css">
+  <title data-section="metaTitle" data-value="title">Dropdown Menu</title>
+  <script src="https://kit.fontawesome.com/8ce7846954.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="nav-bar">
+      <div class="drop-btn" data-section="dropBtn" data-value="dropTitle">
+        Drop-down Menu <span class="fas fa-caret-down"></span>
+      </div>
+      <div class="wrapper">
+        <ul class="menu-bar">
+          <li class="menu-li"><a href="#" data-section="menu" data-value="home">
+              <div class="icon"><span class="fas fa-home"></span></div>
+              Home
+            </a></li>
+          <li class="menu-li"><a href="#" class="show-settings" data-section="menu" data-value="setting">
+              <div class="icon"><span class="fas fa-cog"></span></div>
+              Settings <i class="fas fa-angle-right"></i>
+            </a></li>
+          <li class="menu-li"><a href="#" class="show-help" data-section="menu" data-value="help">
+              <div class="icon"><span class="fas fa-question-circle"></span></div>
+              Help <i class="fas fa-angle-right"></i>
+            </a></li>
+          <li class="menu-li"><a href="#" data-section="menu" data-value="about">
+              <div class="icon"><span class="fas fa-user"></span></div>
+              About us
+            </a></li>
+          <li class="menu-li"><a href="#" data-section="menu" data-value="comment">
+              <div class="icon"><span class="fas fa-comment-alt"></span></div>
+              Feedback
+            </a></li>
+        </ul>
+
+        <!-- Settings & privacy menu-lis -->
+        <ul class="setting-drop">
+          <li class="arrow back-setting-btn menu-li" data-section="settings" data-value="setting"><span
+              class="fas fa-arrow-left"></span>Settings</li>
+          <li class="menu-li"><a href="#" data-section="settings" data-value="info">
+              <div class="icon"><span class="fas fa-user"></span></div>
+              Personal info
+            </a></li>
+          <li class="menu-li"><a href="#" data-section="settings" data-value="password">
+              <div class="icon"><span class="fas fa-lock"></span></div>
+              Password
+            </a></li>
+          <li class="menu-li"><a href="#" class="show-theme" data-section="settings" data-value="theme">
+              <div class="icon"><span class="fas fa-palette"></span></div>
+              Theme <i class="fas fa-angle-right"></i>
+            </a></li>
+          <li class="menu-li"><a href="#" class="show-language" data-section="settings" data-value="language">
+              <div class="icon"><span class="fas fa-globe-asia"></span></div>
+              Langueages <i class="fas fa-angle-right"></i>
+            </a></li>
+          <li class="menu-li"><a href="#" data-section="settings" data-value="logOut">
+              <div class="icon"><span class="fas fa-sign-out-alt"></span></div>
+              Log out
+            </a></li>
+        </ul>
+
+        <!-- Help & support menu-lis -->
+        <ul class="help-drop">
+          <li class="arrow back-help-btn menu-li" data-section="helpDrop" data-value="help"><span
+              class="fas fa-arrow-left"></span>Help</li>
+          <li class="menu-li"><a href="#" data-section="helpDrop" data-value="center">
+              <div class="icon"><span class="fas fa-question-circle"></span></div>
+              Help center
+            </a></li>
+          <li class="menu-li"><a href="#" data-section="helpDrop" data-value="support">
+              <div class="icon"><span class="fas fa-envelope"></span></div>
+              Support inbox
+            </a></li>
+          <li class="menu-li"><a href="#" data-section="helpDrop" data-value="feedback">
+              <div class="icon"><span class="fas fa-comment-alt"></span></div>
+              Send Feedback
+            </a></li>
+          <li class="menu-li"><a href="#" data-section="helpDrop" data-value="report">
+              <div class="icon"><span class="fas fa-exclamation-circle"></span></div>
+              Report problem
+            </a></li>
+        </ul>
+
+        <!-- change theme menu-list -->
+        <ul class="theme-drop">
+          <li class="arrow back-theme-btn menu-li" data-section="tema" data-value="temaTitle"><span
+              class="fas fa-arrow-left"></span>Theme</li>
+          <li class="menu-li"><a href="#" class="dark" data-section="tema" data-value="temaOscuro">
+              <div class="icon"><span class="fas fa-moon"></span></div>
+              Dark
+            </a></li>
+          <li class="menu-li"><a href="#" class="light" data-section="tema" data-value="temaClaro">
+              <div class="icon"><span class="fas fa-sun"></span></div>
+              Light
+            </a></li>
+        </ul>
+
+        <!-- Language menu-list -->
+        <ul class="language-drop">
+          <li class="arrow back-language-btn menu-li" data-section="idioma" data-value="idiomaTitulo"><span
+              class="fas fa-arrow-left"></span>Language</li>
+          <div class="language-container" id="language">
+            <li class="menu-li"><a href="#" data-language="es" data-section="idioma" data-value="idiomaEspanol">
+                Spanish
+              </a></li>
+            <li class="menu-li"><a href="#" data-language="en" data-section="idioma" data-value="idiomaIngles">
+                English
+              </a></li>
+            <li class="menu-li"><a href="#" data-language="pt" data-section="idioma" data-value="idiomaPortugues">
+                Portuguesse
+              </a></li>
+          </div>
+        </ul>
+
+      </div>
+    </nav>
+  </div>
+
+  <script src="/proyecto-5/js/scripts.js"></script>
+</body>
+
+</html>

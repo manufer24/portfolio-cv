@@ -1,0 +1,59 @@
+{
+  "metaTitle": {
+    "title": "Dropdown Menu"
+  },
+
+  "dropBtn": {
+    "dropTitle": "Dropdown Menu <span class='fas fa-caret-down'></span>"
+  },
+
+  "menu": {
+    "home": "<div class='icon'><span class='fas fa-home'></span></div>Home",
+    "setting": "<div class='icon'><span class='fas fa-cog'></span></div>Settings <i class='fas fa-angle-right'></i>",
+    "help": "<div class='icon'><span class='fas fa-question-circle'></span></div>Help <i class='fas fa-angle-right'></i>",
+    "about": "<div class='icon'><span class='fas fa-user'></span></div>About us ",
+    "comment": "<div class='icon'><span class='fas fa-comment-alt'></span></div> Feedback "
+  },
+
+  "settings": {
+    "setting": "<span class='fas fa-arrow-left'></span> Settings ",
+    "info": "<div class='icon'><span class='fas fa-user'></span></div> Personal info ",
+    "password": "<div class='icon'><span class='fas fa-lock'></span></div> Password ",
+    "theme": "<div class='icon'><span class='fas fa-palette'></span></div> Theme <i class='fas fa-angle-right'></i>",
+    "language": "<div class='icon'><span class='fas fa-globe-asia'></span></div> Language <i class='fas fa-angle-right'></i>",
+    "logOut": "<div class='icon'><span class='fas fa-sign-out-alt'></span></div> Log out "
+  },
+
+  "helpDrop": {
+    "help": "<span class='fas fa-arrow-left'></span> Help ",
+    "center": "<div class='icon'><span class='fas fa-question-circle'></span></div> Help center ",
+    "support": "<div class='icon'><span class='fas fa-envelope'></span></div> Support inbox ",
+    "feedback": "<div class='icon'><span class='fas fa-comment-alt'></span></div> Send feedback ",
+    "report": "<div class='icon'><span class='fas fa-exclamation-circle'></span></div> Report problem "
+  },
+
+  "tema": {
+    "temaTitle": "<span class='fas fa-arrow-left'></span>Theme",
+    "temaOscuro": "<div class='icon'><span class='fas fa-moon'></span></div> Dark",
+    "temaClaro": "<div class='icon'><span class='fas fa-sun'></span></div> Light"
+  },
+
+  "idioma": {
+    "idiomaTitulo": "<span class='fas fa-arrow-left'></span>Language",
+    "idiomaEspanol": "Spanish",
+    "idiomaIngles": "English",
+    "idiomaPortugues": "Portuguesse"
+  },
+
+  "temaDrop": {
+    "tema": "Theme",
+    "dark": "dark",
+    "light": "light"
+  },
+
+  "idiomDrop": {
+    "spanish": "Spanish",
+    "english": "English",
+    "portuguesse": "portuguesse"
+  }
+}

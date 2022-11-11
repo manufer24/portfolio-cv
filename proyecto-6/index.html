@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Particles Text</title>
+  <link rel="stylesheet" href="/proyecto-6/css/styles.css">
+</head>
+
+<body>
+  <canvas id="canvas1"></canvas>
+
+  <svg>
+    <filter id="Gooey">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+      <feColorMatrix Values="
+            1 0 0 0 0
+            0 1 0 0 0
+            0 0 1 0 0
+            0 0 0 20 -10" />
+    </filter>
+  </svg>
+
+  <script src="/proyecto-6/js/scripts.js"></script>
+</body>
+
+</html>

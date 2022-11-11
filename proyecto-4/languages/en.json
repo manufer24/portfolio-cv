@@ -1,0 +1,32 @@
+{
+  "metaTitle": {
+    "title": "Dropdown Menu"
+  },
+
+  "brand": {
+    "name": "Name"
+  },
+
+  "menu": {
+    "home": "Home",
+    "products": "Products <i class='bx bx-chevron-down'></i>",
+    "about": "About me",
+    "contact": "Contact",
+    "eBook": "E-books",
+    "paint": "Paints",
+    "onlineCourse": "Online courses",
+    "cookies": "Cookies",
+    "books": "Books",
+    "pencils": "Pencils",
+    "challenge": "Challenges",
+    "activities": "Activities",
+    "medals": "Medals",
+    "emptySlot": "Empty Slot"
+  },
+
+  "settings": {
+    "night": "Night",
+    "lightNight": "Light<br>night",
+    "day": "Day"
+  }
+}

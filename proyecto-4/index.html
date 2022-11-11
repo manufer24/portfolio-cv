@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es" class="html">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <title data-section="metaTitle" data-value="title">Dropdown Menu</title>
+  <link rel="stylesheet" href="/proyecto-4/css/styles.css">
+</head>
+
+<body>
+
+  <header class="header ">
+    <div class="container ">
+
+      <div class="logo-container ">
+        <h3 class="logo">
+          <a href="/proyecto-4/index.html" data-section="brand" data-value="name"> Nombre</a>
+        </h3>
+      </div>
+
+      <nav class="nav-container " id="menu">
+        <ul class="menu drop-scroll">
+          <li class="menu-item" style="--i: 0.5s"><a href="/proyecto-4/index.html" class="menu_link" data-section="menu"
+              data-value="home">Inicio</a></li>
+          <li class="menu-item" style="--i: 0.6s"><a href="#" class="menu_link submenu-btn" data-section="menu"
+              data-value="products">Productos <i class='bx bx-chevron-down'></i> </a>
+            <ul class="submenu drop-scroll">
+              <li class="submenu-item" style="--i: 0.7s"><a href="#" class="submenu_link" data-section="menu"
+                  data-value="eBook">E-book</a>
+              </li>
+              <li class="submenu-item"><a href="#" class="submenu_link" data-section="menu"
+                  data-value="paint">Pinturas</a></li>
+              <li class="submenu-item"><a href="#" class="submenu_link" data-section="menu"
+                  data-value="onlineCourse">Curos online</a></li>
+              <li class="submenu-item"><a href="#" class="submenu_link" data-section="menu"
+                  data-value="cookies">Galletas</a></li>
+              <li class="submenu-item"><a href="#" class="submenu_link" data-section="menu"
+                  data-value="books">Libros</a>
+              </li>
+              <li class="submenu-item"><a href="#" class="submenu_link" data-section="menu"
+                  data-value="pencils">Lápices</a></li>
+            </ul>
+          </li>
+          <li class="menu-item" style="--i: 0.8s"><a href="#" class="menu_link submenu-btn">Club<i
+                class='bx bx-chevron-down'></i></a>
+            <ul class="submenu drop-scroll">
+              <li class="submenu-item"><a href="#" class="submenu_link" data-section="menu"
+                  data-value="challenge">Retos</a>
+              </li>
+              <li class="submenu-item"><a href="#" class="submenu_link" data-section="menu"
+                  data-value="activities">Actividades</a></li>
+              <li class="submenu-item"><a href="#" class="submenu_link" data-section="menu"
+                  data-value="medals">medallas</a></li>
+              <li class="submenu-item"><a href="#" class="submenu_link" data-section="menu"
+                  data-value="emptySlot">Casilla
+                  vacía</a></li>
+              <li class="submenu-item"><a href="#" class="submenu_link" data-section="menu"
+                  data-value="emptySlot">Casilla
+                  vacía</a></li>
+            </ul>
+          </li>
+          <li class="menu-item" style="--i: 0.9s"><a href="#" class="menu_link">Blog</a></li>
+          <li class="menu-item" style="--i: 1s"><a href="#" class="menu_link" data-section="menu"
+              data-value="about">Sobre mi</a></li>
+          <li class="menu-item" style="--i: 1.1s"><a href="#" class="menu_link" data-section="menu"
+              data-value="contact">Contacto</a></li>
+        </ul>
+
+        <div class="menu-iconos" style="--i: 1.2s">
+
+
+          <div class="dark-setting">
+            <div id="dark-setting">
+              <i class='bx bx-cog'></i>
+            </div>
+            <div class="dark-setting-tools">
+              <div class="dark-mode active">
+                <span title="modo oscuro" id="dark">
+                  <i class='bx bxs-moon'></i>
+                  <br>
+                  <p data-section="settings" data-value="night"> Noche</p>
+                </span>
+                <hr>
+                <span title="modo noche clara" id="middle">
+                  <i class='bx bx-brightness-half'></i>
+                  <br>
+                  <p data-section="settings" data-value="lightNight"> Noche<br> clara</p>
+                </span>
+                <hr>
+                <span title="modo claro" id="light">
+                  <i class='bx bxs-sun'></i>
+                  <br>
+                  <p data-section="settings" data-value="day"> Día</p>
+                </span>
+              </div>
+              <!-- ***********************IDIOMAS***************** -->
+              <div class="flags" id="flags">
+                <div class="flags-item" data-language="es" id="spanish">
+                  <img src="/proyecto-4/assets/icons/es.svg" alt="bandera españa" class="flags-img">
+                </div>
+                <div class="flags-item" data-language="en" id="english">
+                  <img src="/proyecto-4/assets/icons/us.svg" alt="bandera u.s" class="flags-img">
+                </div>
+                <div class="flags-item" data-language="pt" id="portuguesse">
+                  <img src="/proyecto-4/assets/icons/br.svg" alt="bandera brazil" class="flags-img">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="log-sign" title="Inicia sesión">
+            <a href="login2.html" class="btn-transparent"><i class='bx bxs-user-circle'></i></a>
+          </div>
+
+        </div>
+
+      </nav>
+      <div class="main-nav-overlay" id="overlay"></div>
+
+      <button class="btnMenu" id="toggle">
+        <div class="top-line"></div>
+        <div class="middle-line"></div>
+        <div class="bottom-line"></div>
+      </button>
+    </div>
+  </header>
+
+  <script src="/proyecto-4/js/scripts.js"></script>
+</body>
+
+</html>

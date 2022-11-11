@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@600&family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Manuel's Portfolio</title>
+  <meta name="author" content="Manuel Fernández">
+  <meta name="description" content="Hello Welcome to my Professional Portfolio, I'm Manuel Fernández, web developer">
+  <link rel="shortcut icon" href="/assets/icons/us.svg" type="image/x-icon">
+  <link rel="favicon" href="ruta-absoluta/assets/favicon.png">
+  <!-- esto es para que todas las imagees se vean en las tarjeticas - ruta absoluta= https://nombre del sitio-->
+  <!-- <link rel="apple-touch-icon" href="ruta-absoluta/assets/favicon.png"> -->
+  <meta name="twitter:card" content="summary">
+  <meta property="og:type" content="website">
+  <meta property="og:title" name="twitter:title" content="Portfolio - Manuel Fernández">
+  <!-- <meta property="og:image" name="twitter:image" content="ruta-absoluta/assets/hero-image-home.jpg"> -->
+  <!-- <meta property="og:url" name="twitter:url" content="ruta-absoluta"> -->
+  <meta property="og:description" name="twitter:description"
+    content="Hello Welcome to my Professional Portfolio, I'm Manuel Fernández, web develope">
+</head>
+
+<body>
+
+  <div class="pre-loader-container">
+    <div class="pre-loader">
+      <span style="--i:0;"></span>
+      <span style="--i:1;"></span>
+      <span style="--i:2;"></span>
+      <span style="--i:3;"></span>
+      <span style="--i:4;"></span>
+      <span style="--i:5;"></span>
+      <span style="--i:6;"></span>
+      <span style="--i:7;"></span>
+    </div>
+  </div>
+
+
+  <svg class="none">
+    <filter id="Gooey">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+      <feColorMatrix Values="
+          1 0 0 0 0
+          0 1 0 0 0
+          0 0 1 0 0
+          0 0 0 20 -10" />
+    </filter>
+  </svg>
+
+  <header class="header">
+    <div class="header-container section">
+      <div class="logo-container">
+        <h3 class="logo">
+          <a href="index.html"> Manuel</a>
+        </h3>
+      </div>
+
+
+      <nav id="navMenu" class="nav-container">
+        <ul class="buttons-container">
+          <li class="button">
+            <a href="#home" class="closeMenu">HOME</a>
+            <p>HOME</p>
+          </li>
+          <li class="button">
+            <a href="#about" class="closeMenu">ABOUT</a>
+            <p>ABOUT</p>
+          </li>
+          <li class="button">
+            <a href="#portfolio" class="closeMenu">PROJECTS</a>
+            <p>PROJECTS</p>
+          </li>
+          <li class="button">
+            <a href="#contact" class="closeMenu">CONTACT</a>
+            <p>CONTACT</p>
+          </li>
+        </ul>
+
+      </nav>
+
+
+      <div class="menu-icons">
+
+
+        <div class="dark-setting">
+          <div id="dark-setting" title="settings">
+            <i class='bx bx-cog'></i>
+          </div>
+          <div class="dark-setting-tools">
+            <div class="dark-mode active" title="chosse the theme">
+              <span title="dark mode" id="dark">
+                <i class='bx bxs-moon'></i>
+              </span>
+              <span title="middle mode" id="middle">
+                <i class='bx bx-brightness-half'></i>
+              </span>
+              <span title="light mode" id="light">
+                <i class='bx bxs-sun'></i>
+              </span>
+            </div>
+            <!-- ***********************LANGUAGES***************** -->
+            <div class="flags" id="flags" title="chosse the language">
+              <div class="flags-item" data-language="es" id="spanish">
+                <img src="/assets/icons/es.svg" alt="bandera españa" class="flags-img">
+              </div>
+              <div class="flags-item" data-language="en" id="english">
+                <img src="/assets/icons/us.svg" alt="bandera u.s" class="flags-img">
+              </div>
+              <div class="flags-item" data-language="pt" id="portuguesse">
+                <img src="/assets/icons/br.svg" alt="bandera brazil" class="flags-img">
+              </div>
+            </div>
+
+            <!-- ***********************CHANCE HOVER COLOR***************** -->
+            <div id="toggle-colors" class="colors" title="chosse the letter color">
+              <div data-color="rgb(2, 69, 194)" class="colors__item colors__item--blue"></div>
+              <div data-color="rgb(2, 180, 91)" class="colors__item colors__item--green"></div>
+              <div data-color="rgb(97, 0, 148)" class="colors__item colors__item--purple"></div>
+              <div data-color="rgb(255, 215, 0)" class="colors__item colors__item--orange"></div>
+              <div data-color="rgb(185, 2, 2)" class="colors__item colors__item--red"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="btnMenu" class="hamburger" title="menu">
+          <div class="hamburger-container">
+            <div class="hamburger-inner"></div>
+            <div class="hamburger-hidden"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+  <div class="online none">Connection restored</div>
+  <div class="offline none">Connection lost</div>
+
+
+
+  <main class="main section">
+    <section id="home" class="home-section section">
+      <article class="home-section-container">
+        <canvas id="canvas1" class="canvas1"></canvas>
+        <svg class="none">
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0
+                                                                                                 0 1 0 0 0
+                                                                                                 0 0 1 0 0
+                                                                                                 0 0 0 19 -9 "
+                result="goo" />
+              <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+            </filter>
+          </defs>
+        </svg>
+
+        <h1 class="title-container">
+          <article class="span-container">
+
+            <span class=" hola">H</span>
+            <span class=" hola">I</span>
+            <span class=" hola">,</span>
+            <br>
+            <span class="hola">I</span>
+            <span class="hola">'</span>
+            <span class="hola">M</span>
+            <span class="hola space"> </span>
+            <span class="hola">M</span>
+            <span class="hola">A</span>
+            <span class="hola">N</span>
+            <span class="hola">U</span>
+            <span class="hola">E</span>
+            <span class="hola">L</span>
+            <span class="hola">,</span>
+            <br>
+
+            <span class="hola">W</span>
+            <span class="hola">E</span>
+            <span class="hola">B</span>
+            <span class="hola space"> </span>
+            <span class="hola">D</span>
+            <span class="hola">E</span>
+            <span class="hola">V</span>
+            <span class="hola">E</span>
+            <span class="hola">L</span>
+            <span class="hola">O</span>
+            <span class="hola">P</span>
+            <span class="hola">E</span>
+            <span class="hola">R</span>
+            <span class="hola">.</span>
+
+
+            <div class="liquid-btn-container">
+              <button class="liquid-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <a href="#about">Contact me</a>
+              </button>
+            </div>
+
+          </article>
+
+
+        </h1>
+      </article>
+
+      <svg class="none">
+        <defs>
+          <filter id="liquid-btn">
+            <feGaussianBlur stdDeviation="10" />
+            <feColorMatrix values="1 0 0 0 0
+                                          0 1 0 0 0
+                                          0 0 1 0 0
+                                          0 0 0 80 -15" />
+            <feBlend in="SourceGraphic" />
+          </filter>
+        </defs>
+      </svg>
+
+      </div>
+    </section>
+    <section id="about" class="about-section section">
+      <article class="about-container">
+        <article class="cards reveal" style="--r: 0.2s">
+          <aside class="card-title">
+            <h2>
+              <span class=" hola">A</span>
+              <span class=" hola">B</span>
+              <span class=" hola">O</span>
+              <span class="hola">U</span>
+              <span class="hola">T</span>
+              <span class="hola space"></span>
+              <span class="hola">M</span>
+              <span class="hola">E</span>
+            </h2>
+          </aside>
+          <p>
+            I'm a Front-End Developer who love <abbr title="User Interface">UI</abbr> effects and animations. I like to
+            code using <abbr title="HyperText Markup Language">HTML</abbr>
+            , Vanilla
+            JavaScript and <abbr title="cascading style sheets">CSS</abbr>, no libraries
+            and no frameworks. I think it's important to understand how things work before learning one
+            of the big libraries.
+          </p>
+
+          <p>The main area of my expertise is front-end development, <abbr
+              title="HyperText Markup Language">HTML</abbr>, <abbr title="cascading style sheets">CSS</abbr>,
+            JavaScript, Vue.js and Tailwindcss and foreign languages.
+          </p>
+
+          <p>
+            I'm passionate about charcoal drawing, foreign languages, videogames and outdoor activities.
+          </p>
+
+
+        </article>
+        <article class="cards reveal" style="--r: 0.35s">
+          <div class="card-container">
+            <aside class="card-title">
+              <h2>
+                <span class=" hola">L</span>
+                <span class=" hola">A</span>
+                <span class=" hola">N</span>
+                <span class="hola">G</span>
+                <span class="hola">U</span>
+                <span class="hola">A</span>
+                <span class="hola">G</span>
+                <span class="hola">E</span>
+                <span class="hola">S</span>
+              </h2>
+            </aside>
+            <small class="little-txt">Years of experience</small>
+            <div class="skills">
+              <div class="skills-header">
+                <span class="skills-start-level">0</span>
+                <span class="skills-start-level">10</span>
+              </div>
+              <div class="skills-item">
+                <p class="skills-tech">English <b>C1</b></p>
+                <div class="skills-bar skills-bar--90"></div>
+              </div>
+              <div class="skills-header">
+                <span class="skills-start-level">0</span>
+                <span class="skills-start-level">1</span>
+              </div>
+              <div class="skills-item">
+                <p class="skills-tech">Portuguesse <b>B2</b></p>
+                <div class="skills-bar skills-bar--70"></div>
+              </div>
+              <small class="little-txt">Native</small>
+              <div class="skills">
+                <div class="skills-item">
+                  <p class="skills-tech">Spanish</p>
+                  <div class="skills-bar skills-bar--100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="liquid-btn-container btn-fix">
+            <button class="liquid-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <a href="#">Donwload CV</a>
+            </button>
+          </div>
+        </article>
+        <article class="cards reveal" style="--r: 0.45s">
+          <div class="card-container">
+            <aside class="card-title">
+              <h2>
+                <span class=" hola">M</span>
+                <span class=" hola">Y</span>
+                <span class=" hola space"></span>
+                <span class="hola">S</span>
+                <span class="hola">K</span>
+                <span class="hola">I</span>
+                <span class="hola">L</span>
+                <span class="hola">L</span>
+                <span class="hola">S</span>
+              </h2>
+            </aside>
+            <small class="little-txt">Years of experience</small>
+            <div class="skills">
+              <div class="skills-header">
+                <span class="skills-start-level">0</span>
+                <span class="skills-start-level">2</span>
+              </div>
+              <div class="skills-item">
+                <p class="skills-tech"><abbr title="HyperText Markup Language">HTML</abbr></p>
+                <div class="skills-bar skills-bar--80"></div>
+              </div>
+              <div class="skills-item">
+                <p class="skills-tech"><abbr title="cascading style sheets">CSS</abbr></p>
+                <div class="skills-bar skills-bar--90"></div>
+              </div>
+              <div class="skills-item">
+                <p class="skills-tech">JavaScript</p>
+                <div class="skills-bar skills-bar--70"></div>
+              </div>
+            </div>
+            <small class="little-txt">Months of experience</small>
+            <div class="skills">
+              <div class="skills-header">
+                <span class="skills-start-level">0</span>
+                <span class="skills-start-level">6</span>
+              </div>
+              <div class="skills-item">
+                <p class="skills-tech">Vue.js</p>
+                <div class="skills-bar skills-bar--50"></div>
+              </div>
+              <div class="skills-item">
+                <p class="skills-tech">Tailwindcss</p>
+                <div class="skills-bar skills-bar--50"></div>
+              </div>
+              <div class="skills-item">
+                <p class="skills-tech">Node.js</p>
+                <div class="skills-bar skills-bar--70"></div>
+              </div>
+
+            </div>
+          </div>
+
+
+        </article>
+      </article>
+    </section>
+
+    <section class="eye-section section">
+      <canvas id="canvasEyes"></canvas>
+    </section>
+
+    <section id="portfolio" class="portfolio section">
+      <div class="portfolio-container">
+        <aside class="card-title">
+          <h2>
+            <span class=" hola">M</span>
+            <span class=" hola">Y</span>
+            <span class=" hola space"></span>
+            <span class="hola">P</span>
+            <span class="hola">R</span>
+            <span class="hola">O</span>
+            <span class="hola">J</span>
+            <span class="hola">E</span>
+            <span class="hola">C</span>
+            <span class="hola">T</span>
+            <span class="hola"> S</span>
+          </h2>
+        </aside>
+        <p> A small gallery of recent projects chosen by me. I've done them
+          with pure <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="cascading style sheets">CSS</abbr>
+          and JavaScript. Others are made with Vue.js and Tailwindcss.
+        </p>
+        <article class="portfolio-card">
+          <img
+            srcset="/assets/img/mobile-particle-landing-page.webp 600w, /assets/img/desktop-particle-landing-page.webp 1024w"
+            src="/assets/img/mobile-particle-landing-page.webp" alt="portfolio project">
+          <aside class="portfolio-card-info">
+            <div>
+              <h3>Portfolio Page practice</h3>
+              <p>
+                Practice Portfolio Page. Made with: <abbr title="HyperText Markup Language">HTML</abbr>, <abbr
+                  title="cascading style sheets">CSS</abbr>,
+                JavaScript.
+              </p>
+              <a href="/proyecto-1/indexEnglish.html" target="_blank">See project</a>
+            </div>
+          </aside>
+        </article>
+        <article class="portfolio-card">
+          <img srcset="/assets/img/mobile-project-2-view.webp 600w, /assets/img/desktop-project-2-view.webp 1024w"
+            src="/assets/img/mobile-project-2-view.webp" alt="Notification page Project">
+          <aside class="portfolio-card-info">
+            <div>
+              <h3>Notfication Page</h3>
+              <p>Notification page practice taken from <a
+                  href="https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC" rel="noopener"
+                  target="_blank">Frontendmentor.io</a> challenges. Made with: <abbr
+                  title="HyperText Markup Language">HTML</abbr>, <abbr title="cascading style sheets">CSS</abbr>,
+                JavaScript.
+              </p>
+              <a href="/proyecto-2/index.html" target="_blank">See project</a>
+            </div>
+          </aside>
+        </article>
+        <article class="portfolio-card">
+          <img srcset="/assets/img/mobile-proyecto-3-view.webp 600w, /assets/img/desktop-proyecto-3-view.webp 1024w"
+            src="/assets/img/mobile-proyecto-3-view.webp" alt="Homepage Project">
+          <aside class="portfolio-card-info">
+            <div>
+              <h3>Homepage practice</h3>
+              <p> Homepage practice taken from <a
+                  href="https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq" rel="noopener"
+                  target="_blank">Frontendmentor.io</a> challenges. Made with: <abbr
+                  title="HyperText Markup Language">HTML</abbr>, <abbr title="cascading style sheets">CSS</abbr>,
+                JavaScript.
+              </p>
+              <a href="/proyecto-3/index.html" target="_blank">See project</a>
+            </div>
+          </aside>
+        </article>
+        <article class="portfolio-card">
+          <img srcset="/assets/img/mobile-dropdown-menu.webp 600w, /assets/img/desktop-dropdown-menu.webp 1024w"
+            src="/assets/img/mobile-dropdown-menu.webp" alt="Drop-down menu Project">
+          <aside class="portfolio-card-info">
+            <div>
+              <h3>Drop-down menu</h3>
+              <p>Drop-down menu with mobile and desktop view. Made with: <abbr
+                  title="HyperText Markup Language">HTML</abbr>, <abbr title="cascading style sheets">CSS</abbr>,
+                JavaScript.
+              </p>
+              <a href="/proyecto-4/index.html" target="_blank">See Project</a>
+            </div>
+          </aside>
+        </article>
+        <article class="portfolio-card">
+          <img src="/assets/img/small-menu.webp" alt="Small Drop-down menu Project">
+          <aside class="portfolio-card-info">
+            <div>
+              <h3>Small Drop-down menu</h3>
+              <p>Small drop-down menu with multiple sections. Made with: <abbr
+                  title="HyperText Markup Language">HTML</abbr>, <abbr title="cascading style sheets">CSS</abbr>,
+                JavaScript.
+              </p>
+              <a href="/proyecto-5/index.html" target="_blank">See Project</a>
+            </div>
+          </aside>
+        </article>
+        <article class="portfolio-card">
+          <img src="/assets/img/liquid-text.webp" alt="liquid text effect project">
+          <aside class="portfolio-card-info">
+            <div>
+              <h3>Liquid text</h3>
+              <p>Text with liquid effect. Made with: <abbr title="HyperText Markup Language">HTML</abbr>, <abbr
+                  title="cascading style sheets">CSS</abbr>, JavaScript.
+              </p>
+              <a href="/proyecto-6/index.html" target="_blank">See Project</a>
+            </div>
+          </aside>
+        </article>
+        <article class="portfolio-card">
+          <img
+            srcset="/assets/img/mobile-menu-vuejs-tailwind.webp 600w, /assets/img/desktop-menu-vuejs-tailwind.webp 1024w"
+            src="/assets/img/mobile-menu-vuejs-tailwind.webp"
+            alt="Drop-down menu with dark mode made with Vuejs and Tailwindcss Project">
+          <aside class="portfolio-card-info">
+            <div>
+              <h3>Vue.js and Tailwindcss Menu</h3>
+              <p>Navigation menu with dark mode and functional links. Made with: <abbr
+                  title="HyperText Markup Language">HTML</abbr>, Vue.js
+                and Tailwindcss.
+              </p>
+              <a href="/proyecto-7/menu-vue-tailwind/index.html" target="_blank">See Project</a>
+            </div>
+          </aside>
+        </article>
+        <article class="portfolio-card">
+          <img src="/assets/img/drag-drop-vuejs-tailwind.jpg"
+            alt="Drag and Drop boards made with Vuejs and Tailwindcss">
+          <aside class="portfolio-card-info">
+            <div>
+              <h3>Drag and Drop Boards</h3>
+              <p>Drag and Drop Boards. Made with: <abbr title="HyperText Markup Language">HTML</abbr>, Vue.js
+                and Tailwindcss.
+              </p>
+              <a href="/proyecto-8/drag-drop-tabs/index.html" target="_blank">See Project</a>
+            </div>
+          </aside>
+        </article>
+      </div>
+    </section>
+    <section id="contact" class="contact-section section">
+      <article class="contact-section-container">
+        <article class="cards card-contact reveal">
+          <aside class="card-title">
+            <span class=" hola">C</span>
+            <span class=" hola">O</span>
+            <span class=" hola">N</span>
+            <span class=" hola">T</span>
+            <span class=" hola">A</span>
+            <span class=" hola">C</span>
+            <span class=" hola">T</span>
+            <span class=" hola space"></span>
+            <span class=" hola">M</span>
+            <span class=" hola">E</span>
+          </aside>
+          <form class="form" id="form">
+            <!-- Group: Name -->
+            <div class="form-group" id="group-name">
+              <label for="name" class="form-label">Name</label>
+              <div class="form-group-input">
+                <input type="text" class="form-input" name="name" id="name" placeholder="Write your name">
+                <i class='form-validation-status bx bxs-x-circle'></i>
+              </div>
+              <p class="form-group-error none">Name only acepts letters and blanks</p>
+            </div>
+            <!-- Group: Email -->
+            <div class="form-group" id="group-email">
+              <label for="email" class="form-label">Email</label>
+              <div class="form-group-input">
+                <input type="email" class="form-input" name="email" id="email" placeholder="example@example.com">
+                <i class='form-validation-status bx bxs-x-circle'></i>
+              </div>
+              <p class="form-group-error none">Enter a valid email address</p>
+            </div>
+
+            <!-- Gruop: Subject -->
+            <div class="form-group" id="group-subject">
+              <label for="subject" class="form-label">Subject</label>
+              <div class="form-group-input">
+                <input type="text" class="form-input" name="subject" id="subject" placeholder="type the subject">
+                <i class='form-validation-status bx bxs-x-circle'></i>
+              </div>
+              <p class="form-group-error none">write the subject</p>
+            </div>
+
+            <!-- Gruop: Message -->
+            <div class="form-group" id="group-message">
+              <label for="message" class="form-label">Message</label>
+              <div class="form-group-input">
+                <textarea name="message" id="message" class="text-area" cols="30" rows="10"
+                  placeholder="Write a message"></textarea>
+                <i class='form-validation-status bx bxs-x-circle'></i>
+              </div>
+              <p class="form-group-error none">Your message must be at least 10 characters long and must not exceed 255
+                characters</p>
+            </div>
+
+            <div class="form-message none" id="form-message">
+              <p><i class='bx bxs-error'></i> <b>Error:</b>Please, complete the form correctly</p>
+            </div>
+            <div class="form-response none ">
+              <p>The message has been sent</p>
+            </div>
+
+            <div class="form-response-error none ">
+              <p>An error occurred while sending, please try again</p>
+            </div>
+
+            <div class="loader-send none">
+              <div class="loader-container">
+                <span style="--i:0;"></span>
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+                <span style="--i:4;"></span>
+                <span style="--i:5;"></span>
+                <span style="--i:6;"></span>
+                <span style="--i:7;"></span>
+              </div>
+            </div>
+
+            <div class="liquid-btn-container btn-contact">
+              <button class="liquid-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <a type="submit">Contact me</a>
+              </button>
+            </div>
+
+          </form>
+        </article>
+
+        <div class="bg-liquid">
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+
+        </div>
+        <svg class="none">
+          <defs>
+            <filter id="bg-liquid">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+              <feColorMatrix in="name" mode="matrix" values="1 0 0 0 0
+                                              0 1 0 0 0
+                                              0 0 1 0 0
+                                              0 0 0 50 -15" />
+              <feBlend in="SourceGraphic" />
+            </filter>
+          </defs>
+        </svg>
+
+      </article>
+    </section>
+  </main>
+
+  <div class="nav-bg nav-top" style="--i: 0.5s"></div>
+  <div class="nav-bg nav-middle" style="--i: 0.8s">
+    <p>Manuel is thinking...</p>
+  </div>
+  <div class="nav-bg nav-bottom" style="--i: 1.1s"></div>
+
+  <footer class="footer section">
+    <canvas id="canvasbg" class="canvas"></canvas>
+    <canvas id="canvas" class="canvas"></canvas>
+    <div class="footer-container">
+      <span> Porfolio created by Manuel Fernández</span>
+    </div>
+  </footer>
+  <svg class="none">
+    <defs>
+      <filter id="bubblefooter">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+        <feColorMatrix in="blur" mode="matrix" values=" 1 0 0 0 0
+                                                                                            0 1 0 0 0
+                                                                                            0 0 1 0 0
+                                                                                            0 0 0 60 -10"
+          result="goo" />
+        <feBlend in="SourceGraphic" in2="goo" />
+      </filter>
+    </defs>
+  </svg>
+
+  <script type="module" src="/js/script.js"></script>
+</body>
+
+</html>
