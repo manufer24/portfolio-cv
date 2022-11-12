@@ -96,7 +96,7 @@ d.addEventListener("mouseup", (e) => {
 });
 
 // ********CHANGE LANGUAGE********
-const $languageElements = document.getElementById("language"),
+const $languageElements = document.getElementById("lenguaje"),
   $textsToChange = document.querySelectorAll("[data-section]");
 
 let currentIdiom = localStorage.getItem("idiom");
