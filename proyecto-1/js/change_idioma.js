@@ -3,10 +3,14 @@ export default function idioma() {
 
   const changeIdioma = async (idioma) => {
     if (idioma === "spanish")
-      location.href = "/proyecto-1/spanish/indexSpanish.html";
+      location.href =
+        "https://manufer24.github.io/portfolio-cv/proyecto-1/spanish/indexSpanish.html";
     if (idioma === "portuguesse")
-      location.href = "/proyecto-1/portuguesse/indexPortuguesse.html";
-    if (idioma === "english") location.href = "/proyecto-1/indexEnglish.html";
+      location.href =
+        "https://manufer24.github.io/portfolio-cv/proyecto-1/portuguesse/indexPortuguesse.html";
+    if (idioma === "english")
+      location.href =
+        "https://manufer24.github.io/portfolio-cv/proyecto-1/indexEnglish.html";
   };
 
   $flagsIcons.addEventListener("click", (e) => {
