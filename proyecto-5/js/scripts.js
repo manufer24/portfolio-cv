@@ -103,7 +103,9 @@ let currentIdiom = localStorage.getItem("idiom");
 
 const changeLanguage = async (language) => {
   try {
-    let res = await fetch(`./languages/${language}.json`),
+    let res = await fetch(
+        `https://manufer24.github.io/portfolio-cv/proyecto-5/languages/${language}.json`
+      ),
       json = await res.json();
 
     if (!res.ok) throw { status: res.status, statuText: res.statusText };
