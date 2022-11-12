@@ -118,7 +118,6 @@ const changeLanguage = async (language) => {
     }
   } catch (err) {
     console.log(`${err.statusText} // Ocurrió un error`);
-    console.log(err);
   }
 };
 
