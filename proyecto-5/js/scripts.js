@@ -96,15 +96,15 @@ d.addEventListener("mouseup", (e) => {
 });
 
 // ********CHANGE LANGUAGE********
-const $languageElements = document.getElementById("lenguaje"),
+const $languageElements = document.getElementById("language"),
   $textsToChange = document.querySelectorAll("[data-section]");
 
 let currentIdiom = localStorage.getItem("idiom");
 
-const changeLenguaje = async (lenguaje) => {
+const changeLanguage = async (language) => {
   try {
     let res = await fetch(
-        `https://manufer24.github.io/portfolio-cv/proyecto-5/languages/${lenguaje}.json`
+        `https://manufer24.github.io/portfolio-cv/proyecto-5/languages/${language}.json`
       ),
       json = await res.json();
 
@@ -123,13 +123,13 @@ const changeLenguaje = async (lenguaje) => {
 };
 
 $languageElements.addEventListener("click", (e) => {
-  localStorage.setItem("idiom", e.target.dataset.lenguaje);
-  changeLenguaje(e.target.dataset.lenguaje);
+  localStorage.setItem("idiom", e.target.dataset.language);
+  changeLanguage(e.target.dataset.language);
 });
 
-if (currentIdiom === "espanol") changeLenguaje(currentIdiom);
-if (currentIdiom === "ingles") changeLenguaje(currentIdiom);
-if (currentIdiom === "portugues") changeLenguaje(currentIdiom);
+if (currentIdiom === "es") changeLanguage(currentIdiom);
+if (currentIdiom === "en") changeLanguage(currentIdiom);
+if (currentIdiom === "pt") changeLanguage(currentIdiom);
 
 // ********CHANGE THEME********
 
