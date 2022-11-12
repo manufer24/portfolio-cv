@@ -6,7 +6,7 @@
   "dropBtn": {
     "dropTitle": "Menu desplegable <span class='fas fa-caret-down'></span>"
   },
-
+ 
   "menu": { 
     "home": "<div class='icon'><span class='fas fa-home'></span></div> Inicio ",
     "setting": "<div class='icon'><span class='fas fa-cog'></span></div>Configuraciones <i class='fas fa-angle-right'></i>",

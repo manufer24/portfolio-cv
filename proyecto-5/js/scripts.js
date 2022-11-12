@@ -101,10 +101,10 @@ const $languageElements = document.getElementById("language"),
 
 let currentIdiom = localStorage.getItem("idiom");
 
-const changeLanguage = async (language) => {
+const changeLenguaje = async (lenguaje) => {
   try {
     let res = await fetch(
-        `https://manufer24.github.io/portfolio-cv/proyecto-5/languages/${language}.json`
+        `https://manufer24.github.io/portfolio-cv/proyecto-5/languages/${lenguaje}.json`
       ),
       json = await res.json();
 
@@ -123,14 +123,13 @@ const changeLanguage = async (language) => {
 };
 
 $languageElements.addEventListener("click", (e) => {
-  localStorage.setItem("idiom", e.target.dataset.language);
-  changeLanguage(e.target.dataset.language);
-  console.log(e.target.dataset.language);
+  localStorage.setItem("idiom", e.target.dataset.lenguaje);
+  changeLenguaje(e.target.dataset.lenguaje);
 });
 
-if (currentIdiom === "es") changeLanguage(currentIdiom);
-if (currentIdiom === "en") changeLanguage(currentIdiom);
-if (currentIdiom === "pt") changeLanguage(currentIdiom);
+if (currentIdiom === "espanol") changeLenguaje(currentIdiom);
+if (currentIdiom === "ingles") changeLenguaje(currentIdiom);
+if (currentIdiom === "portugues") changeLenguaje(currentIdiom);
 
 // ********CHANGE THEME********
 
