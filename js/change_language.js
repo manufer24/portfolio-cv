@@ -4,9 +4,10 @@ export default function language() {
   const changeLanguage = async (language) => {
     if (language === "es")
       location.href = "https://manufer24.github.io/portfolio-cv/es/index.html";
-    else if (language === "pt")
+    if (language === "pt")
       location.href = "https://manufer24.github.io/portfolio-cv/pt/index.html";
-    else location.href = "https://manufer24.github.io/portfolio-cv/index.html";
+    if (language === "en")
+      location.href = "https://manufer24.github.io/portfolio-cv/index.html";
   };
 
   $flagsElements.addEventListener("click", (e) =>
