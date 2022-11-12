@@ -7,7 +7,7 @@
     "dropTitle": "Dropdown Menu <span class='fas fa-caret-down'></span>"
   },
 
-  "menu": {
+  "menu": { 
     "home": "<div class='icon'><span class='fas fa-home'></span></div>Home",
     "setting": "<div class='icon'><span class='fas fa-cog'></span></div>Settings <i class='fas fa-angle-right'></i>",
     "help": "<div class='icon'><span class='fas fa-question-circle'></span></div>Help <i class='fas fa-angle-right'></i>",

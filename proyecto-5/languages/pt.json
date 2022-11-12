@@ -10,7 +10,7 @@
   "menu": {
     "home": "<div class='icon'><span class='fas fa-home'></span></div>Inicio ",
     "setting": "<div class='icon'><span class='fas fa-cog'></span></div>Configurações  <i class='fas fa-angle-right'></i>",
-    "help": "<div class='icon'><span class='fas fa-question-circle'></span></div> Ajuda <i class='fas fa-angle-right'></i>",
+    "help": "<div class='icon'><span class='fas fa-question-circle'></span></div>Ajuda <i class='fas fa-angle-right'></i>",
     "about": "<div class='icon'><span class='fas fa-user'></span></div> Sobre nós ",
     "comment": "<div class='icon'><span class='fas fa-comment-alt'></span></div>Comentários "
   },
