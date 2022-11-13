@@ -27,7 +27,7 @@
   "helpDrop": {
     "help": "<span class='fas fa-arrow-left'></span> Ajuda ",
     "center": "<div class='icon'><span class='fas fa-question-circle'></span></div> Centro de ajuda ",
-    "support": "<div class='icon'><span class='fas fa-envelope'></span></div> Caixa de apoio ",
+    "support": "<div class='icon'><span class='fas fa-envelope'></span></div> Caixa de apoio",
     "feedback": "<div class='icon'><span class='fas fa-comment-alt'></span></div> Enviar comentários ",
     "report": "<div class='icon'><span class='fas fa-exclamation-circle'></span></div> Denunciar problema "
   },
