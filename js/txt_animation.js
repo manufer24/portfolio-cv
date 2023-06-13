@@ -15,12 +15,4 @@ export default function txtAnimation() {
     });
   });
 
-  // move.forEach((el) => {
-  //   el.addEventListener("mouseenter", function () {
-  //     el.classList.add("animation");
-  //     setTimeout(() => {
-  //       el.classList.remove("animation");
-  //     }, 1000);
-  //   });
-  // });
 }
