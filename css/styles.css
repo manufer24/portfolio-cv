@@ -893,24 +893,28 @@ abbr[title] {
 
 .reveal {
   position: relative;
-  transform: translateY(150px);
+  transform: translateX(80%);
   opacity: 0;
   transition: transform 1s ease, opacity 1s ease;
   transition-delay: var(--r);
 }
 
-.contentReveal {
-  transform: translateY(0px);
+.reveal:nth-child(2) {
+  transform: translateX(-80%);
+}
+
+.reveal.contentReveal {
+  transform: translate(0%);
   opacity: 1;
 }
 
 .cards {
   margin-top: 10px;
   width: 90%;
-  height: 100%;
+  height: 80%;
   background-color: var(--card-color);
   padding: 20px 15px;
-  border-radius: 10px;
+  border-radius: 25px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1613,6 +1617,22 @@ abbr[title] {
     top: 30%;
     left: 40%;
     transform: translate(-30%, -40%);
+  }
+
+  .reveal {
+    transform: translateX(-80%);
+  }
+  
+  .reveal:nth-child(2) {
+    transform: translateY(80%);
+  }
+  .reveal:nth-child(3) {
+    transform: translateX(80%);
+  }
+  
+  .reveal.contentReveal {
+    transform: translate(0%);
+    opacity: 1;
   }
 
   .cards {
