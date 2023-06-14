@@ -8,7 +8,7 @@
   --skills-bar-length: 0%;
   --ok-color: #1ed12d;
   --error-color: #f44336;
-}
+} 
 
 /*********************** Reset ****************************/
 html {
@@ -175,7 +175,8 @@ abbr[title] {
 
 .online,
 .offline {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: var(--header-height);
   z-index: 980;
   padding: 2px;
@@ -187,6 +188,76 @@ abbr[title] {
 
 .offline {
   background-color: var(--error-color);
+}
+
+/* ******************** Animations ******************** */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  animation: pulse 1.5s linear infinite;
+}
+
+@keyframes slideUpFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.slide-up-fade-in {
+  animation: slideUpFadeIn 0.6s cubic-bezier(0.3, 0.7, 0.3, 1);
+  animation-fill-mode: backwards;
+}
+
+@keyframes zoomOutFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.zoom-out-fade-in {
+  animation: zoomOutFadeIn 0.5s cubic-bezier(0.5, 0.7, 0.7, 1);
+  animation-fill-mode: backwards;
+}
+
+.delay-2 {
+  animation-delay: 0.2s;
+}
+.delay-4 {
+  animation-delay: 0.4s;
+}
+.delay-6 {
+  animation-delay: 0.6s;
+}
+.delay-8 {
+  animation-delay: 0.8s;
+}
+.delay-10 {
+  animation-delay: 1s;
+}
+.delay-12 {
+  animation-delay: 1.2s;
 }
 
 /*************************Header******************************/
