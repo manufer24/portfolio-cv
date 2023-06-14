@@ -127,7 +127,7 @@ abbr[title] {
   justify-content: center;
   align-items: center;
   background-color: rgb(17, 17, 17);
-  transition: opacity 0.5s, visibility 0.5s;
+  transition: opacity 0.4s, visibility 0.4s;
 }
 
 .pre-loader {
