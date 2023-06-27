@@ -6,7 +6,7 @@ import liquidFooter from "./liquid_footer.js";
 import language from "./change_language.js";
 import contactFormValidation from "./form_validation.js";
 import networkStatus from "./network_status.js";
-import scrollReveal from "./scrollReveal.js";
+import scrollReveal from "./scroll_reveal.js";
 import preLoader from "./pre_loader.js";
 import eyesFollowing from "./eyes_following.js";
 
@@ -24,4 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
 networkStatus();
 
 window.addEventListener("scroll", scrollReveal);
-window.addEventListener("load", preLoader);
+window.addEventListener("load", () => {
+  preLoader();
+  animationHomePage();
+});
+
