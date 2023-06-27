@@ -9,6 +9,7 @@ import networkStatus from "./network_status.js";
 import scrollReveal from "./scroll_reveal.js";
 import preLoader from "./pre_loader.js";
 import eyesFollowing from "./eyes_following.js";
+import animationHomePage from "./animation_home_page.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   menu();
