@@ -81,6 +81,10 @@ ul {
   display: none;
 }
 
+.p-show {
+  opacity: 0;
+}
+
 .section {
   max-width: 1300px;
   margin-right: auto;
@@ -247,14 +251,18 @@ abbr[title] {
   }
 }
 
-.slide-up-fade-in {
-  animation: slideUpFadeIn 0.7s cubic-bezier(0.3, 0.7, 0.3, 1);
+.zoom-out-fade-in,
+.home-zoom-out-fade-in {
+  animation: zoomOutFadeIn 0.7s cubic-bezier(0.5, 0.7, 0.7, 1);
+  animation-duration: 1s;
   animation-fill-mode: backwards;
 }
 
+.home-slide-up-fade-in {
+  animation-fill-mode: forwards;
+}
 
-.zoom-out-fade-in {
-  animation: zoomOutFadeIn 0.7s cubic-bezier(0.5, 0.7, 0.7, 1);
+.home-zoom-out-fade-in {
   animation-fill-mode: backwards;
 }
 
