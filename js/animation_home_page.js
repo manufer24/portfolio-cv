@@ -8,7 +8,7 @@ export default function animationHomePage() {
             return
           } else {
             console.log(entry.target)
-            entry.target.classList.add("slide-up-fade-in")
+            entry.target.classList.add("home-slide-up-fade-in")
           }
         })
       })
@@ -21,7 +21,7 @@ export default function animationHomePage() {
             return
           } else {
             console.log(entry.target)
-            entry.target.classList.add("zoom-out-fade-in")
+            entry.target.classList.add("home-zoom-out-fade-in")
           }
         })
       })

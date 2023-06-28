@@ -251,15 +251,22 @@ abbr[title] {
   }
 }
 
+.slide-up-fade-in,
+.home-slide-up-fade-in {
+  animation: slideUpFadeIn 0.7s cubic-bezier(0.3, 0.7, 0.3, 1);
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
 .zoom-out-fade-in,
 .home-zoom-out-fade-in {
   animation: zoomOutFadeIn 0.7s cubic-bezier(0.5, 0.7, 0.7, 1);
   animation-duration: 1s;
-  animation-fill-mode: backwards;
+  animation-fill-mode: forwards;
 }
 
 .home-slide-up-fade-in {
-  animation-fill-mode: forwards;
+  animation-fill-mode: backwards;
 }
 
 .home-zoom-out-fade-in {

@@ -19,9 +19,9 @@ reveals.forEach((el) => observerReveal.observe(el));
 const observePShow = new IntersectionObserver(function(entries, observe) {
 entries.forEach((entry) => {
 if (entry.isIntersecting) {
-  entry.target.classList.add("home-slide-up-fade-in")
+  entry.target.classList.add("slide-up-fade-in")
 } else {
-  entry.target.classList.remove("home-slide-up-fade-in")
+  entry.target.classList.remove("slide-up-fade-in")
 }
 })
 })
