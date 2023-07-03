@@ -295,6 +295,46 @@ abbr[title] {
   animation-delay: 1.5s;
 }
 
+/*************************@media hover******************************/
+
+@media (hover: hover) {
+  a:hover {
+    color: var(--txt-hover);
+  }
+
+  /********** hover-Header*********/
+  .logo-container:hover a {
+    color: var(--txt-hover);
+  }
+
+  /********** hover-hamburguer-menu*********/
+  .hamburger:hover .hamburger-inner {
+    transform: translate(-51px, 50%);
+    opacity: 0;
+  }
+  .hamburger:hover .hamburger-inner::before,
+  .hamburger:hover .hamburger-inner::after {
+    transform: translate(102px, 0);
+    opacity: 0;
+  }
+  .hamburger:hover .hamburger-hidden {
+    opacity: 1;
+    transform: translate(0, -50%);
+    background-color: var(--txt-hover);
+  }
+  .hamburger:hover .hamburger-hidden::before,
+  .hamburger:hover .hamburger-hidden::after {
+    opacity: 1;
+    transform: translate(0, 0);
+    background-color: var(--txt-hover);
+  }
+
+  /************** hover-Boton-Dark-Mode ***************/
+  #dark-setting:hover {
+    color: var(--txt-hover);
+  }
+} 
+
 /*************************Header******************************/
 .header {
   position: fixed;
@@ -333,15 +373,6 @@ abbr[title] {
   height: 24px;
   position: relative;
 }
-.hamburger:hover .hamburger-inner {
-  transform: translate(-51px, 50%);
-  opacity: 0;
-}
-.hamburger:hover .hamburger-inner::before,
-.hamburger:hover .hamburger-inner::after {
-  transform: translate(102px, 0);
-  opacity: 0;
-}
 .hamburger.is-active .hamburger-inner {
   display: none;
 }
@@ -373,17 +404,6 @@ abbr[title] {
 }
 .hamburger-inner::after {
   top: 13px;
-}
-.hamburger:hover .hamburger-hidden {
-  opacity: 1;
-  transform: translate(0, -50%);
-  background-color: var(--txt-hover);
-}
-.hamburger:hover .hamburger-hidden::before,
-.hamburger:hover .hamburger-hidden::after {
-  opacity: 1;
-  transform: translate(0, 0);
-  background-color: var(--txt-hover);
 }
 .hamburger.is-active .hamburger-hidden {
   opacity: 1;
@@ -452,7 +472,7 @@ abbr[title] {
   cursor: pointer;
 }
 
-#dark-setting:hover {
+#dark-setting:active {
   color: var(--txt-hover);
 }
 

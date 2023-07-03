@@ -7,7 +7,6 @@ export default function animationHomePage() {
           if (!entry.isIntersecting) {
             return
           } else {
-            console.log(entry.target)
             entry.target.classList.add("home-slide-up-fade-in")
           }
         })
@@ -20,7 +19,6 @@ export default function animationHomePage() {
           if (!entry.isIntersecting) {
             return
           } else {
-            console.log(entry.target)
             entry.target.classList.add("home-zoom-out-fade-in")
           }
         })
