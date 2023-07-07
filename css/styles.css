@@ -330,7 +330,7 @@ abbr[title] {
   }
 
   /************** hover-Boton-Dark-Mode ***************/
-  #dark-setting:hover {
+  #dark-setting svg:hover {
     color: var(--txt-hover);
   }
 
@@ -472,13 +472,14 @@ abbr[title] {
   align-items: center;
 }
 
-#dark-setting {
-  transition: color 0.5s ease;
+#dark-setting svg {
+  fill: var(--text-color);
+  transition: fill 0.5s ease;
   cursor: pointer;
 }
 
-#dark-setting:active {
-  color: var(--txt-hover);
+#dark-setting svg:active {
+  fill: var(--txt-hover);
 }
 
 .dark-setting-tools {
@@ -515,11 +516,19 @@ abbr[title] {
 }
 
 .dark-mode > span {
-  transition: color 0.2s linear;
   display: flex;
   align-items: center;
   cursor: pointer;
+}
+
+.dark-mode > span > svg {
   transition: animation 0.3s ease;
+}
+
+#dark svg,
+#light svg,
+#middle {
+  fill: var(--text-color);
 }
 
 .dark-mode > span:hover {
