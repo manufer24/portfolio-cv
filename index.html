@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@600&family=Raleway&display=swap" rel="stylesheet">
@@ -409,7 +408,7 @@
     </section>
 
     <section id="portfolio" class="portfolio section">
-      <div class="portfolio-container">
+      
         <aside class="card-title p-show delay-2">
           <h2>
             <span class=" hola">M</span>
@@ -429,134 +428,106 @@
           with pure <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="cascading style sheets">CSS</abbr>
           and JavaScript. Others are made with Vue.js and Tailwindcss.
         </p>
-        <article class="portfolio-card">
-          <img
-            srcset="https://manufer24.github.io/portfolio-cv/assets/img/mobile-particle-landing-page.webp 600w,  https://manufer24.github.io/portfolio-cv/assets/img/desktop-particle-landing-page.webp 1024w"
-            src="https://manufer24.github.io/portfolio-cv/assets/img/mobile-particle-landing-page.webp"
-            alt="portfolio project">
-          <aside class="portfolio-card-info">
-            <div>
-              <h3>Portfolio Page</h3>
-              <p>
-                Portfolio Page. Made with: <abbr title="HyperText Markup Language">HTML</abbr>, <abbr
-                  title="cascading style sheets">CSS</abbr>,
-                JavaScript.
-              </p>
-              <a href="https://manufer24.github.io/portfolio-cv/proyecto-1/indexEnglish.html" target="_blank">See
-                project</a>
-            </div>
-          </aside>
-        </article>
-        <article class="portfolio-card">
-          <img
-            srcset="https://manufer24.github.io/portfolio-cv/assets/img/mobile-project-2-view.webp 600w,  https://manufer24.github.io/portfolio-cv/assets/img/desktop-project-2-view.webp 1024w"
-            src="https://manufer24.github.io/portfolio-cv/assets/img/mobile-project-2-view.webp"
-            alt="Notification page Project">
-          <aside class="portfolio-card-info">
-            <div>
-              <h3>Notfication Page</h3>
+
+        <div id="arrow-left" class="arrow">
+          <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+            <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z">
+            </path>
+          </svg>
+        </div>
+        <div class="carousel">
+        <div class="carousel-card">
+            <img class="carousel-img" src="https://manufer24.github.io/portfolio-cv/assets/img/mobile-particle-landing-page.webp"
+            alt="portfolio project" draggable="false">
+              <h3>Landing Page</h3>
+              <p>Animated Landing Page with smooth transitions. Made with: <abbr title="HyperText Markup Language">HTML</abbr>, <abbr
+                title="cascading style sheets">CSS</abbr>,
+                JavaScript.</p>
+                <a class="carousel-link" href="https://manufer24.github.io/portfolio-cv/proyecto-1/indexEnglish.html" target="_blank">See
+                  project</a>
+        </div>
+        <div class="carousel-card">
+          <img class="carousel-img" src="https://manufer24.github.io/portfolio-cv/assets/img/mobile-project-2-view.webp"
+          alt="Notification page Project" draggable="false">
+          <h3>Notfication Page</h3>
               <p>Notification page practice taken from <a
                   href="https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC" rel="noopener"
                   target="_blank">Frontendmentor.io</a> challenges. Made with: <abbr
                   title="HyperText Markup Language">HTML</abbr>, <abbr title="cascading style sheets">CSS</abbr>,
                 JavaScript.
               </p>
-              <a href="https://manufer24.github.io/portfolio-cv/proyecto-2/index.html" target="_blank">See project</a>
-            </div>
-          </aside>
-        </article>
-        <article class="portfolio-card">
-          <img
-            srcset="https://manufer24.github.io/portfolio-cv/assets/img/mobile-proyecto-3-view.webp 600w,  https://manufer24.github.io/portfolio-cv/assets/img/desktop-proyecto-3-view.webp 1024w"
-            src="https://manufer24.github.io/portfolio-cv/assets/img/mobile-proyecto-3-view.webp"
-            alt="Homepage Project">
-          <aside class="portfolio-card-info">
-            <div>
-              <h3>Homepage practice</h3>
+              <a class="carousel-link" href="https://manufer24.github.io/portfolio-cv/proyecto-2/index.html" target="_blank">See project</a>
+        </div>
+        <div class="carousel-card">
+          <img class="carousel-img" src="https://manufer24.github.io/portfolio-cv/assets/img/mobile-proyecto-3-view.webp"
+          alt="Homepage Project" draggable="false">
+          <h3>Homepage practice</h3>
               <p> Homepage practice taken from <a
                   href="https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq" rel="noopener"
                   target="_blank">Frontendmentor.io</a> challenges. Made with: <abbr
                   title="HyperText Markup Language">HTML</abbr>, <abbr title="cascading style sheets">CSS</abbr>,
                 JavaScript.
               </p>
-              <a href="https://manufer24.github.io/portfolio-cv/proyecto-3/index.html" target="_blank">See project</a>
-            </div>
-          </aside>
-        </article>
-        <article class="portfolio-card">
-          <img
-            srcset="https://manufer24.github.io/portfolio-cv/assets/img/mobile-dropdown-menu.webp 600w,  https://manufer24.github.io/portfolio-cv/assets/img/desktop-dropdown-menu.webp 1024w"
-            src="https://manufer24.github.io/portfolio-cv/assets/img/mobile-dropdown-menu.webp"
-            alt="Drop-down menu Project">
-          <aside class="portfolio-card-info">
-            <div>
-              <h3>Drop-down menu</h3>
+              <a class="carousel-link" href="https://manufer24.github.io/portfolio-cv/proyecto-3/index.html" target="_blank">See project</a>
+        </div>
+        <div class="carousel-card">
+          <img class="carousel-img" src="https://manufer24.github.io/portfolio-cv/assets/img/mobile-dropdown-menu.webp"
+          alt="Drop-down menu Project" draggable="false">
+          <h3>Drop-down menu</h3>
               <p>Drop-down menu with mobile and desktop view. Made with: <abbr
                   title="HyperText Markup Language">HTML</abbr>, <abbr title="cascading style sheets">CSS</abbr>,
                 JavaScript.
               </p>
-              <a href="https://manufer24.github.io/portfolio-cv/proyecto-4/index.html" target="_blank">See Project</a>
-            </div>
-          </aside>
-        </article>
-        <article class="portfolio-card">
-          <img src="https://manufer24.github.io/portfolio-cv/assets/img/small-menu.webp"
-            alt="Small Drop-down menu Project">
-          <aside class="portfolio-card-info">
-            <div>
-              <h3>Small Drop-down menu</h3>
-              <p>Small drop-down menu with multiple sections. Made with: <abbr
-                  title="HyperText Markup Language">HTML</abbr>, <abbr title="cascading style sheets">CSS</abbr>,
-                JavaScript.
-              </p>
-              <a href="https://manufer24.github.io/portfolio-cv/proyecto-5/index.html" target="_blank">See Project</a>
-            </div>
-          </aside>
-        </article>
-        <article class="portfolio-card">
-          <img src="https://manufer24.github.io/portfolio-cv/assets/img/liquid-text.webp"
-            alt="liquid text effect project">
-          <aside class="portfolio-card-info">
-            <div>
-              <h3>Liquid text</h3>
+              <a class="carousel-link" href="https://manufer24.github.io/portfolio-cv/proyecto-4/index.html" target="_blank">See Project</a>
+        </div>
+        <div class="carousel-card">
+          <img class="carousel-img" src="https://manufer24.github.io/portfolio-cv/assets/img/small-menu.webp"
+          alt="Small Drop-down menu Project" draggable="false">
+          <h3>Small Drop-down menu</h3>
+          <p>Small drop-down menu with multiple sections. Made with: <abbr
+              title="HyperText Markup Language">HTML</abbr>, <abbr title="cascading style sheets">CSS</abbr>,
+            JavaScript.
+          </p>
+          <a class="carousel-link" href="https://manufer24.github.io/portfolio-cv/proyecto-5/index.html" target="_blank">See Project</a>
+        </div>
+        <div class="carousel-card">
+          <img class="carousel-img" src="https://manufer24.github.io/portfolio-cv/assets/img/liquid-text.webp"
+          alt="liquid text effect project" draggable="false">
+          <h3>Liquid text</h3>
               <p>Text with liquid effect. Made with: <abbr title="HyperText Markup Language">HTML</abbr>, <abbr
                   title="cascading style sheets">CSS</abbr>, JavaScript.
               </p>
-              <a href="https://manufer24.github.io/portfolio-cv/proyecto-6/index.html" target="_blank">See Project</a>
-            </div>
-          </aside>
-        </article>
-        <article class="portfolio-card">
-          <img
-            srcset="https://manufer24.github.io/portfolio-cv/assets/img/mobile-menu-vuejs-tailwind.webp 600w,  https://manufer24.github.io/portfolio-cv/assets/img/desktop-menu-vuejs-tailwind.webp 1024w"
-            src="https://manufer24.github.io/portfolio-cv/assets/img/mobile-menu-vuejs-tailwind.webp"
-            alt="Drop-down menu with dark mode made with Vuejs and Tailwindcss Project">
-          <aside class="portfolio-card-info">
-            <div>
-              <h3>Vue.js and Tailwindcss Menu</h3>
-              <p>Navigation menu with dark mode and functional links. Made with: <abbr
-                  title="HyperText Markup Language">HTML</abbr>, Vue.js
-                and Tailwindcss.
-              </p>
-              <a href="https://manufer24.github.io/vuejs-tailwindcss-projects/" target="_blank">See
-                Project</a>
-            </div>
-          </aside>
-        </article>
-        <article class="portfolio-card">
-          <img src="https://manufer24.github.io/portfolio-cv/assets/img/drag-drop-vuejs-tailwind.jpg"
-            alt="Drag and Drop boards made with Vuejs and Tailwindcss">
-          <aside class="portfolio-card-info">
-            <div>
-              <h3>Drag and Drop Tabs</h3>
+              <a class="carousel-link" href="https://manufer24.github.io/portfolio-cv/proyecto-6/index.html" target="_blank">See Project</a>
+        </div>
+        <div class="carousel-card">
+          <img class="carousel-img" src="https://manufer24.github.io/portfolio-cv/assets/img/mobile-menu-vuejs-tailwind.webp"
+            alt="Drop-down menu with dark mode made with Vuejs and Tailwindcss Project" draggable="false">
+            <h3>Vue.js and Tailwindcss Menu</h3>
+            <p>Navigation menu with dark mode and functional links. Made with: <abbr
+                title="HyperText Markup Language">HTML</abbr>, Vue.js
+              and Tailwindcss.
+            </p>
+            <a class="carousel-link" href="https://manufer24.github.io/vuejs-tailwindcss-projects/" target="_blank">See
+              Project</a>
+        </div>
+
+        <div class="carousel-card">
+          <img class="carousel-img" src="https://manufer24.github.io/portfolio-cv/assets/img/drag-drop-vuejs-tailwind.jpg"
+            alt="Drag and Drop boards made with Vuejs and Tailwindcss" draggable="false">
+            <h3>Drag and Drop Tabs</h3>
               <p>Drag and Drop Tabs. Made with: <abbr title="HyperText Markup Language">HTML</abbr>, Vue.js
                 and Tailwindcss.
               </p>
-              <a href="https://manufer24.github.io/drag-drop-tabs/" target="_blank" rel="noopener">See
+              <a class="carousel-link" href="https://manufer24.github.io/drag-drop-tabs/" target="_blank" rel="noopener">See
                 Project</a>
-            </div>
-          </aside>
-        </article>
+        </div>
+
+      </div>
+      <div id="arrow-right" class="arrow">
+        <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+          <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z">
+          </path>
+        </svg>
       </div>
     </section>
     <section id="contact" class="contact-section section">

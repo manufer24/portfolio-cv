@@ -333,6 +333,11 @@ abbr[title] {
   #dark-setting:hover {
     color: var(--txt-hover);
   }
+
+  /************** hover-portfolia-arrow ***************/
+  .arrow:hover {
+    opacity: 0.8;
+  }
 } 
 
 /*************************Header******************************/
@@ -1062,88 +1067,134 @@ abbr[title] {
 
 /********************** PORTFOLIO SECTION ********************/
 
+
 .portfolio {
   height: auto;
   padding: 0 20px;
   margin-top: 70px;
-}
-
-.portfolio .card-title {
-  margin-bottom: 0;
-  margin-top: 20px;
-}
-
-.portfolio-card {
   position: relative;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  display: block;
 }
 
-.portfolio-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.portfolio-card-info {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 1rem;
-  background-color: var(--card-color);
-  color: var(--text-color);
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.5s ease-in-out;
-}
-
-.portfolio-card:hover .portfolio-card-info {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.portfolio-card-info > div {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  text-align: justify;
-  border: thin solid var(--text-color);
-}
-
-.portfolio-card-info > div > h3 {
-  text-align: center;
-}
-
-.portfolio-card-info > div > p {
-  font-size: 14px;
-}
-
-.portfolio-card-info > div > p > a {
-  color: var(--text-color);
-  font-weight: bolder;
-}
-
-.portfolio-card-info > div > p > a:hover {
-  color: var(--txt-hover);
-}
-
-.portfolio-card-info > div > a {
-  color: var(--text-color);
-  font-weight: bolder;
-}
-
-.portfolio-card-info > div > a:hover {
-  color: var(--txt-hover);
-}
 .portfolio p {
   text-align: center;
+} 
+
+.arrow {
+    height: 50px;
+    width: 50px;
+    background-color: var(--txt-hover);
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: opacity 0.3s ease;
+}
+
+.arrow-svg {
+  position: absolute;
+  fill: var(--text-color);
+  left: 1px;
+}
+
+.arrow:active {
+  opacity: 0.8;
+}
+
+#arrow-right {
+  right: 23px;
+}
+
+
+.carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  gap: 16px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: 0;
+  height: 80vh;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+
+.carousel.dragging .carousel-card {
+  cursor: grab;
+  user-select: none;
+}
+
+.carousel-card {
+  scroll-snap-align: start;
+  height: 90%;
+  list-style: none;
+  background-color: var(--card-color);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  cursor: pointer;
+  padding-bottom: 20px;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  border-radius: 25px 25px 0 0;
+}
+
+.carousel-card h3 {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 10px 0 5px;
+  color: var(--text-color);
+}
+
+.carousel-card p {
+  color: var(--text-color);
+  margin: 0 20px;
+}
+
+.carousel-link {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 13px;
+  background-color: var(--txt-hover);
+  border-radius: 13px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-link:hover {
+  color: var(--text-color);
+  opacity: 0.8;
+  transform: scale(1.1);
+} 
+
+.carousel-card > p > a {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.carousel-card > p > a:hover {
+  color: var(--txt-hover);
 }
 
 /********************** CONTACT SECTION ********************/
@@ -1474,19 +1525,11 @@ abbr[title] {
   .button a {
     font-size: 55px;
   }
-  .portfolio-container {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
+
+  .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
   }
 
-  .portfolio .card-title {
-    grid-column: span 2;
-  }
-
-  .portfolio p {
-    grid-column: span 2;
-    text-align: center;
-  }
 }
 /************************ DESTOK SCREEN ***************************/
 
@@ -1676,18 +1719,14 @@ abbr[title] {
 
   /************************ PORTFOLIO SECTION ***************************/
 
-  .portfolio-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .portfolio .card-title {
-    grid-column: span 4;
+  .portfolio .carousel {
+    grid-auto-columns: calc((100% / 3) - 12px);
   }
 
   .portfolio p {
     grid-column: span 4;
-  }
+  } 
+
 
   /************************ CONTACT SECTION ***************************/
 

@@ -10,6 +10,7 @@ import scrollReveal from "./scroll_reveal.js";
 import preLoader from "./pre_loader.js";
 import eyesFollowing from "./eyes_following.js";
 import animationHomePage from "./animation_home_page.js";
+import carousel from "./carousel.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   menu();
@@ -20,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   contactFormValidation();
   liquidFooter();
   eyesFollowing();
+  carousel();
 });
 
 networkStatus();
