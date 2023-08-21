@@ -4,10 +4,10 @@
   --text-color: rgb(17, 17, 17);
   --bg-color: rgb(230, 230, 230);
   --card-color: rgb(163, 161, 161);
-  --txt-hover: rgb(185, 2, 2);
+  --txt-hover: rgb(160, 28, 28);
   --skills-bar-length: 0%;
-  --ok-color: #1ed12d;
-  --error-color: #f44336;
+  --ok-color: rgb(60, 180, 70);
+  --error-color: rgb(223, 83, 73);
 } 
 
 /*********************** Reset ****************************/

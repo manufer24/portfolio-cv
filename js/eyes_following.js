@@ -8,11 +8,11 @@ export default function eyesFollowing() {
 
   const currentTheme = localStorage.getItem("theme");
   let currentColor = localStorage.getItem("color"),
-    blueColor = "rgb(2, 69, 194)",
-    greenColor = "rgb(2, 180, 91)",
-    purpleColor = "rgb(97, 0, 148)",
-    orangeColor = "rgb(255, 215, 0)",
-    redColor = "rgb(185, 2, 2)";
+    blueColor = "rgb(29, 77, 165)",
+    greenColor = "rgb(28, 156, 92)",
+    purpleColor = "rgb(89, 22, 126)",
+    orangeColor = "rgb(191, 172, 64)",
+    redColor = "rgb(160, 28, 28)";
 
   const mouse = {
     x: undefined,
@@ -34,12 +34,12 @@ export default function eyesFollowing() {
       // draw eye
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, true);
-      ctx.fillStyle = "rgb(185, 2, 2)";
-      if (currentColor === redColor) ctx.fillStyle = "rgb(185, 2, 2)";
-      if (currentColor === blueColor) ctx.fillStyle = "rgb(2, 69, 194)";
-      if (currentColor === greenColor) ctx.fillStyle = "rgb(2, 180, 91)";
-      if (currentColor === purpleColor) ctx.fillStyle = "rgb(97, 0, 148)";
-      if (currentColor === orangeColor) ctx.fillStyle = "rgb(255, 215, 0)";
+      ctx.fillStyle = "rgb(160, 28, 28)";
+      if (currentColor === redColor) ctx.fillStyle = "rgb(160, 28, 28)";
+      if (currentColor === blueColor) ctx.fillStyle = "rgb(29, 77, 165)";
+      if (currentColor === greenColor) ctx.fillStyle = "rgb(28, 156, 92)";
+      if (currentColor === purpleColor) ctx.fillStyle = "rgb(89, 22, 126)";
+      if (currentColor === orangeColor) ctx.fillStyle = "rgb(191, 172, 64)";
       ctx.fill();
       ctx.closePath();
 
