@@ -46,12 +46,22 @@ body.middle {
   --card-color: rgb(57, 62, 70);
 }
 
+body.dark img,
+body.middle img {
+  filter: brightness(0.8) contrast(1.2);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --text-color: rgb(230, 230, 230);
     --bg-color: rgb(17, 17, 17);
     --card-color: rgb(33, 33, 33);
   }
+
+  body.dark img,
+  body.middle img {
+  filter: brightness(0.8) contrast(1.2);
+}
 }
 
 body::-webkit-scrollbar {
@@ -69,7 +79,7 @@ a {
   transition: color 0.5s ease;
 }
 
-a:hover {
+a:active {
   color: var(--txt-hover);
 }
 
@@ -343,7 +353,7 @@ abbr[title] {
 /*************************Header******************************/
 .header {
   position: fixed;
-  top: 0;
+  bottom: 0;
   width: 100%;
   z-index: 800;
   background-color: var(--bg-color);
@@ -355,7 +365,6 @@ abbr[title] {
   align-items: center;
   height: 70px;
   top: 0;
-  padding: 0 10px;
 }
 
 .logo-container a {
@@ -363,8 +372,8 @@ abbr[title] {
   font-size: 30px;
 }
 
-.logo-container:hover a {
-  color: var(--txt-hover);
+.logo-container {
+  padding-left: 10px;
 }
 
 /***************************** Hamburguer Menu *****************************/
@@ -460,6 +469,7 @@ abbr[title] {
   justify-content: space-between;
   align-items: center;
   right: 30px;
+  padding-right: 10px;
 }
 
 .dark-setting {
@@ -484,7 +494,7 @@ abbr[title] {
 
 .dark-setting-tools {
   position: absolute;
-  bottom: calc(70px - 320px);
+  bottom: 75px;
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
@@ -513,6 +523,17 @@ abbr[title] {
   border-radius: 0 0 10px 10px;
   padding: 5px;
   border-top: 2px solid var(--text-color);
+}
+
+.dark-mode::before {
+  position: absolute;
+  content: "";
+  bottom: -11px;
+  left: 169px;
+  border-bottom: 12px solid rgba(0, 0, 0, 0.4);
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  transform: rotate(180deg);
 }
 
 .dark-mode > span {
@@ -568,16 +589,6 @@ abbr[title] {
   width: 100%;
   border-radius: 10px 10px 0 0;
   border-bottom: 2px solid var(--text-color);
-}
-
-.colors::before {
-  position: absolute;
-  content: "";
-  top: -11px;
-  left: 165px;
-  border-bottom: 12px solid rgba(0, 0, 0, 0.4);
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
 }
 
 .colors__item {
@@ -776,7 +787,6 @@ abbr[title] {
 /************************ HOME SECTION ***************************/
 
 .home-section {
-  margin-top: 70px;
   position: relative;
 }
 
@@ -784,7 +794,7 @@ abbr[title] {
   position: absolute;
   width: 100%;
   height: 50%;
-  bottom: 0;
+  top: 0;
   filter: url("#goo");
 }
 
@@ -795,7 +805,8 @@ abbr[title] {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+  bottom: 0;
   padding-top: 10px;
   margin: 0;
 }
@@ -1101,6 +1112,7 @@ abbr[title] {
     transform: translateY(-50%);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
     transition: opacity 0.3s ease;
+    z-index: 2;
 }
 
 .arrow-svg {
@@ -1511,8 +1523,7 @@ abbr[title] {
   bottom: 0;
   width: 100vw;
   max-width: 1300px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0px auto 70px auto;
 }
 
 .footer {
@@ -1525,7 +1536,6 @@ abbr[title] {
   width: 100%;
   height: 250px;
   text-align: center;
-  padding-right: 20px;
   color: var(--bg-color);
 }
 
@@ -1543,6 +1553,13 @@ abbr[title] {
 /************************ DESTOK SCREEN ***************************/
 
 @media screen and (min-width: 1024px) {
+  /***************************** Navbar Menu *****************************/
+  .header {
+    top: 0;
+    height: 70px;
+  }
+
+
   /***************************** Navbar Menu *****************************/
 
   .nav-container {
@@ -1589,7 +1606,32 @@ abbr[title] {
     font-size: 50px;
   }
 
+   /***************** DARK MODE BUTTOM ***************************/
+
+  .dark-setting-tools {
+    bottom: calc(70px - 320px);
+  }
+  
+
+  .dark-mode::before {
+    display: none;
+  }
+
+  .colors::before {
+  position: absolute;
+  content: "";
+  top: -11px;
+  left: 169px;
+  border-bottom: 12px solid rgba(0, 0, 0, 0.4);
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+}
+
   /************************ HOME SECTION ***************************/
+
+  .home-section {
+    margin-top: 70px;
+  }
 
   #canvas1 {
     position: absolute;
@@ -1751,5 +1793,11 @@ abbr[title] {
   .btn-contact {
     padding-top: 0;
     margin-top: 20px;
+  }
+
+  /************************ FOOTER SECTION ***************************/
+
+  .footer-container {
+    margin: 0px auto 0px auto;
   }
 }
