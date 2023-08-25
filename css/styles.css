@@ -341,7 +341,7 @@ abbr[title] {
 
   /************** hover-Boton-Dark-Mode ***************/
   #dark-setting svg:hover {
-    color: var(--txt-hover);
+    fill: var(--txt-hover);
   }
 
   /************** hover-portfolia-arrow ***************/
@@ -807,7 +807,7 @@ abbr[title] {
   justify-content: center;
   align-items: start;
   bottom: 0;
-  padding-top: 10px;
+  padding-left: 20px;
   margin: 0;
 }
 
