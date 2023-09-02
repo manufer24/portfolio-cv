@@ -1,13 +1,14 @@
 :root {
   --font: "Raleawy", sans-serif;
   --title-font: "DynaPuff", sans-serif;
-  --text-color: rgb(17, 17, 17);
-  --bg-color: rgb(230, 230, 230);
-  --card-color: rgb(163, 161, 161);
-  --txt-hover: rgb(160, 28, 28);
+  --text-color: #111;
+  --bg-color: #e6e6e6;
+  --card-color: #a3a1a1;
+  --txt-hover: #0ce7f2;
+  --btn-color: #111;
   --skills-bar-length: 0%;
-  --ok-color: rgb(60, 180, 70);
-  --error-color: rgb(223, 83, 73);
+  --ok-color: #3cb446;
+  --error-color: #df5349;
 } 
 
 /*********************** Reset ****************************/
@@ -35,15 +36,15 @@ body {
 }
 
 body.dark {
-  --text-color: rgb(230, 230, 230);
-  --bg-color: rgb(17, 17, 17);
-  --card-color: rgb(33, 33, 33);
+  --text-color: #e6e6e6;
+  --bg-color: #111111;
+  --card-color: #212121;
 }
 
 body.middle {
-  --text-color: rgb(230, 230, 230);
-  --bg-color: rgb(34, 40, 49);
-  --card-color: rgb(57, 62, 70);
+  --text-color: #e6e6e6;
+  --bg-color: #222831;
+  --card-color: #393e46;
 }
 
 body.dark img,
@@ -53,9 +54,9 @@ body.middle img {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text-color: rgb(230, 230, 230);
-    --bg-color: rgb(17, 17, 17);
-    --card-color: rgb(33, 33, 33);
+    --text-color: #e6e6e6;
+    --bg-color: #111;
+    --card-color: #212121;
   }
 
   body.dark img,
@@ -607,19 +608,19 @@ abbr[title] {
 }
 
 .colors__item--blue {
-  --txt-hover: rgb(2, 69, 194);
+  --txt-hover: #0ce7f2;
 }
 .colors__item--green {
-  --txt-hover: rgb(2, 180, 91);
+  --txt-hover: #4bff4b;
 }
 .colors__item--purple {
-  --txt-hover: rgb(97, 0, 148);
+  --txt-hover: #f988ff;
 }
 .colors__item--orange {
-  --txt-hover: rgb(255, 215, 0);
+  --txt-hover: #ffff00;
 }
 .colors__item--red {
-  --txt-hover: rgb(185, 2, 2);
+  --txt-hover: #fdcae1;
 }
 
 /***************************** Navbar Menu *****************************/
@@ -850,7 +851,7 @@ abbr[title] {
 
 .liquid-btn a {
   font-size: 16px;
-  color: var(--text-color);
+  color: var(--btn-color);
   position: relative;
   width: 80px;
 }
@@ -1117,7 +1118,7 @@ abbr[title] {
 
 .arrow-svg {
   position: absolute;
-  fill: var(--text-color);
+  fill: var(--btn-color);
   left: 1px;
 }
 
@@ -1195,7 +1196,7 @@ abbr[title] {
 .carousel-link {
   font-weight: 600;
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--btn-color);
   padding: 13px;
   background-color: var(--txt-hover);
   border-radius: 13px;
@@ -1203,7 +1204,7 @@ abbr[title] {
 }
 
 .carousel-link:hover {
-  color: var(--text-color);
+  color: var(--btn-color);
   opacity: 0.8;
   transform: scale(1.1);
 } 

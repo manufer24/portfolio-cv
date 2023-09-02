@@ -39,11 +39,11 @@ export default function menu() {
 
   // TOGGLE COLORS
   let currentColor = localStorage.getItem("color"),
-    blueColor = "rgb(2, 69, 194)",
-    greenColor = "rgb(2, 180, 91)",
-    purpleColor = "rgb(97, 0, 148)",
-    orangeColor = "rgb(255, 215, 0)",
-    redColor = "rgb(185, 2, 2)";
+    blueColor = "#0ce7f2",
+    greenColor = "#4bff4b",
+    purpleColor = "#f988ff",
+    orangeColor = "#ffff00",
+    redColor = "#fdcae1";
 
   if (currentColor === blueColor)
     rootStyles.setProperty("--txt-hover", blueColor);
