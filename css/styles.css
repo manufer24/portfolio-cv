@@ -751,7 +751,7 @@ abbr[title] {
 .nav-bg {
   width: 100vw;
   height: 33.3333vh;
-  background-color: var(--text-color);
+  background-color: var(--card-color);
   position: fixed;
   top: 0;
   left: 0;
@@ -763,7 +763,7 @@ abbr[title] {
 }
 
 .nav-middle {
-  background-color: var(--text-color);
+  background-color: var(--card-color);
   top: 33.3333vh;
 }
 
@@ -775,7 +775,7 @@ abbr[title] {
 }
 
 .nav-bottom {
-  background-color: var(--text-color);
+  background-color: var(--card-color);
   top: 66.6666vh;
 }
 
@@ -1075,6 +1075,9 @@ abbr[title] {
 
 /********************** EYES FOLLOWING SECTION ********************/
 
+#eyes-following {
+  display: none;
+}
 .eye-section {
   position: relative;
 }
@@ -1760,6 +1763,9 @@ abbr[title] {
   }
 
   /************************ EYES SECTION ***************************/
+  #eyes-following {
+    display: block;
+  }
 
   #canvas4 {
     position: absolute;

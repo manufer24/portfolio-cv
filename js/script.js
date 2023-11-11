@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   contactFormValidation();
   liquidFooter();
   eyesFollowing();
-  carousel();
+  carousel(); 
 });
 
 networkStatus();
